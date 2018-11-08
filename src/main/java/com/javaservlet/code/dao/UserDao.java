@@ -1,7 +1,7 @@
-package dao;
+package main.java.com.javaservlet.code.dao;
 
-import db.DBUtil;
-import model.User;
+import main.java.com.javaservlet.code.db.DBUtil;
+import main.java.com.javaservlet.code.model.User;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -118,7 +118,7 @@ public class UserDao {
                 user.setPassword(resultSet.getString("password"));
                 user.setAge(resultSet.getInt("age"));
                 user.setCreatTime(resultSet.getString("creatTime"));
-                user.setUpdateTime(resultSet.getString("uploadTime"));
+                user.setUpdateTime(resultSet.getString("updateTime"));
                 users.add(user);
             }
             return users;

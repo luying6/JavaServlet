@@ -1,4 +1,4 @@
-package model;
+package main.java.com.javaservlet.code.model;
 
 /**
  * @author luying
@@ -58,5 +58,10 @@ public class User {
 
     public void setUpdateTime(String updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public String toString(){
+        return "id:" + id + " adminName:"+adminName + " password:" + password+ " age:"+age
+                + " createTime:" + creatTime+ " updateTime:"+ updateTime;
     }
 }

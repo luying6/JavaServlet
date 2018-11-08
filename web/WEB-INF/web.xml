@@ -5,11 +5,11 @@
          version="4.0">
 
     <!--<servlet>-->
-        <!--<servlet-name>HttpTest</servlet-name>-->
-        <!--<servlet-class>HttpTest</servlet-class>-->
+        <!--<servlet-name>main.java.com.javaservlet.HttpTest</servlet-name>-->
+        <!--<servlet-class>main.java.com.javaservlet.HttpTest</servlet-class>-->
     <!--</servlet>-->
     <!--<servlet-mapping>-->
-        <!--<servlet-name>HttpTest</servlet-name>-->
-        <!--<url-pattern>/HttpTest</url-pattern>-->
+        <!--<servlet-name>main.java.com.javaservlet.HttpTest</servlet-name>-->
+        <!--<url-pattern>/main.java.com.javaservlet.HttpTest</url-pattern>-->
     <!--</servlet-mapping>-->
 </web-app>

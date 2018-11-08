@@ -1,7 +1,7 @@
-package controller;
+package main.java.com.javaservlet.code.controller;
 
-import dao.UserDao;
-import model.User;
+import main.java.com.javaservlet.code.dao.UserDao;
+import main.java.com.javaservlet.code.model.User;
 
 import java.sql.SQLException;
 import java.util.List;
