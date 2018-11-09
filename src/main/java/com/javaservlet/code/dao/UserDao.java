@@ -66,6 +66,8 @@ public class UserDao {
                 user.setId(set.getInt("id"));
                 user.setPassword(set.getString("password"));
                 users.add(user);
+                DBUtil.release(connection, stmt, set);
+
                 return user;
             } while (set.next());
         }
@@ -103,7 +105,8 @@ public class UserDao {
                 users.add(user);
             }
 
-            return users;
+        DBUtil.release(connection, preparedStatement, set);
+        return users;
         }
 
         public List<User> getAllUser() throws SQLException {
@@ -121,6 +124,7 @@ public class UserDao {
                 user.setUpdateTime(resultSet.getString("updateTime"));
                 users.add(user);
             }
+            DBUtil.release(connection, stmt, resultSet);
             return users;
         }
     }
